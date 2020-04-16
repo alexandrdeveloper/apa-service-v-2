@@ -362,3 +362,55 @@ header {
       color: #02adcc; }
 
 /***** Стили Прайс КОНЕЦ *****/
+/***** Стили слайдера НАЧАЛО *****/
+.banner__slider {
+  height: 20.813rem; }
+
+.banner-text {
+  background-color: #eeeeee;
+  padding: 0;
+  position: relative; }
+  .banner-text__title {
+    display: block;
+    position: absolute;
+    width: 120%;
+    top: 14%;
+    left: 18%;
+    font-family: 'Geometria Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    z-index: 2; }
+    .banner-text__title span {
+      background: #02a9d1;
+      display: inline-block;
+      width: auto;
+      padding: .8rem;
+      line-height: .9; }
+    .banner-text__title span:nth-child(odd) {
+      background: #e18753; }
+  .banner-text__link {
+    display: inline-block;
+    position: absolute;
+    bottom: 12%;
+    left: 18%; }
+
+.banner-image {
+  padding: 0;
+  height: 100%; }
+  .banner-image__item {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    width: 100%;
+    height: inherit; }
+    .banner-image__item img {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 100%; }
+
+/***** Стили сладера КОНЕЦ *****/
