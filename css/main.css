@@ -102,6 +102,64 @@ button, input {
           -ms-transform: translateY(0);
               transform: translateY(0); }
 
+.accordeon {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  width: 100%; }
+  .accordeon__title {
+    font-family: 'Geometria Medium', sans-serif;
+    text-decoration: underline;
+    color: #fa873f;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 2px solid #cccccc;
+    cursor: pointer;
+    position: relative; }
+    .accordeon__title::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      width: 1.438rem;
+      height: 1.438rem;
+      background-image: url("../img/acc/arrow.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-transform: translateY(-50%) rotate(-90deg);
+          -ms-transform: translateY(-50%) rotate(-90deg);
+              transform: translateY(-50%) rotate(-90deg);
+      -webkit-transition: -webkit-transform .3s;
+      transition: -webkit-transform .3s;
+      -o-transition: transform .3s;
+      transition: transform .3s;
+      transition: transform .3s, -webkit-transform .3s; }
+  .accordeon__info {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    padding-bottom: 3.125rem;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out; }
+    .accordeon__info p {
+      margin: 0;
+      font-family: 'Geometria Medium', sans-serif;
+      color: #4e4e4e;
+      font-size: 0.875rem;
+      line-height: 2.14; }
+  .accordeon__item:last-child {
+    border-bottom: 2px solid #cccccc; }
+  .accordeon__item .accordeon__info {
+    display: none; }
+  .accordeon__item_active .accordeon__title::after {
+    -webkit-transform: translateY(-50%) rotate(0deg);
+        -ms-transform: translateY(-50%) rotate(0deg);
+            transform: translateY(-50%) rotate(0deg); }
+  .accordeon__item_active .accordeon__info {
+    display: block; }
+
 /***** Базовые стили КОНЕЦ *****/
 /***** Стили шапки НАЧАЛО *****/
 header {
@@ -813,3 +871,5 @@ header {
     background-size: 100% 111%; }
 
 /***** Стили "оборудование" КОНЕЦ *****/
+/***** Стили "часто задаваемые вопросы" НАЧАЛО *****/
+/***** Стили "часто задаваемые вопросы" КОНЕЦ *****/
