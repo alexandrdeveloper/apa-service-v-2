@@ -777,7 +777,6 @@ header {
 /***** Стили "Наши сотрудники" КОНЕЦ *****/
 /***** Стили "Оборудование" НАЧАЛО *****/
 .equipment__item {
-  height: 200px;
   width: 100%;
   background-size: 100%;
   background-position: 0 70%;
@@ -786,6 +785,11 @@ header {
   max-width: 364px;
   margin: auto;
   position: relative; }
+  .equipment__item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 57%; }
 
 .equipment__info {
   position: absolute;
