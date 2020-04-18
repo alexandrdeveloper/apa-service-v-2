@@ -602,7 +602,10 @@ header {
   color: #fff;
   background-color: #c2c2c2;
   z-index: 4;
-  position: relative; }
+  position: relative;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out; }
   .examples__nav::after {
     content: '';
     display: block;
@@ -617,7 +620,10 @@ header {
     border: 30px solid transparent;
     border-top: 1.5rem solid #fa873f;
     z-index: 4;
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out; }
 
 .examples__banner {
   position: absolute;
