@@ -667,3 +667,145 @@ header {
   z-index: 3; }
 
 /***** Стили "Как мы работаем" КОНЕЦ *****/
+/***** Стили "Наши сотрудники" НАЧАЛО *****/
+.team__item {
+  border: 2px solid #d9d9d9;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  height: 12.25rem;
+  z-index: 4;
+  margin-bottom: 2.95rem; }
+  .team__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f3f3f3;
+    z-index: -1; }
+  .team__item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -webkit-calc(101% + 0.438rem);
+    top: calc(101% + 0.438rem);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 10.625rem;
+    height: 2.5rem;
+    background-image: url("../img/team/dot.png");
+    background-repeat: repeat; }
+
+.team__image {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%; }
+  .team__image img {
+    display: block;
+    width: 80%;
+    max-width: 9.563rem; }
+
+.team__info {
+  width: 50%;
+  position: relative; }
+
+.team__name {
+  font-family: 'Geometria Bold', sans-serif;
+  font-size: 0.875rem;
+  color: #404040;
+  text-transform: uppercase;
+  max-width: 6.25rem;
+  display: inline-block;
+  position: absolute;
+  top: 3.75rem;
+  left: 0; }
+
+.team__specialty {
+  font-family: 'Geometria Medium', sans-serif;
+  color: #b3b3b3;
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 3.75rem;
+  left: 0; }
+
+.team__rating {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  padding-top: .7rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-bottom: 0.4rem;
+  background-color: #53c7dc;
+  color: #fff;
+  font-family: 'Geometria Bold', sans-serif;
+  font-size: 1.125rem; }
+  .team__rating::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1.5rem solid transparent;
+    border-top: 1.3rem solid #53c7dc; }
+
+/***** Стили "Наши сотрудники" КОНЕЦ *****/
+/***** Стили "Оборудование" НАЧАЛО *****/
+.equipment__item {
+  height: 200px;
+  width: 100%;
+  background-size: 100%;
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+  z-index: 4;
+  max-width: 364px;
+  margin: auto;
+  position: relative; }
+
+.equipment__info {
+  position: absolute;
+  font-family: 'Geometria Medium', sans-serif;
+  font-size: 1.1rem;
+  color: #404040;
+  text-align: right;
+  width: 60%;
+  top: 20%;
+  right: 1rem; }
+  .equipment__info span {
+    display: inline-block; }
+
+.equipment__box {
+  z-index: 3; }
+  .equipment__box:nth-child(1) .equipment__item {
+    background-position: 50% 0%;
+    background-size: 100% 100%; }
+  .equipment__box:nth-child(3) .equipment__item {
+    background-position: 50% 100%;
+    background-size: 100% 111%; }
+
+/***** Стили "оборудование" КОНЕЦ *****/
