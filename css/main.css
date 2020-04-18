@@ -365,6 +365,122 @@ header {
     z-index: 2; }
 
 /***** Стили шапки КОНЕЦ *****/
+/***** Общие стили секций НАЧАЛО *****/
+.section__head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0;
+  position: relative;
+  z-index: 2; }
+  .section__head::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: url("../../../img/section/header-line.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: -1;
+    bottom: 0.75rem; }
+  .section__head-title {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #353535;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-family: 'Geometria Medium', sans-serif;
+    padding: 0.75rem 1.875rem;
+    background: #fff;
+    line-height: .78; }
+  .section__head-link {
+    font-family: 'Geometria Medium', sans-serif;
+    color: #a8a8a8;
+    font-size: 1.125rem;
+    text-decoration: underline;
+    padding: 0.75rem 1.875rem;
+    border: 1px solid transparent;
+    background-color: #fff;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+    line-height: .78; }
+    .section__head-link::after {
+      content: '\f105';
+      display: inline-block;
+      font-family: 'FA-PR-400';
+      margin-left: 1.375rem;
+      vertical-align: baseline; }
+    .section__head-link:hover {
+      border: 1px solid #02adcc;
+      color: #02adcc; }
+
+.section__description {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  margin-top: 1.875rem; }
+  .section__description p {
+    display: block;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin: 0;
+    font-family: 'Geometria Medium', sans-serif;
+    color: #4e4e4e;
+    font-size: 0.875rem;
+    line-height: 2.14; }
+
+.section__slug {
+  font-family: 'Geometria Medium', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color: #353535;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  line-height: 1.33; }
+
+.section__header {
+  padding: 2.625rem 0; }
+  .section__header_center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    .section__header_center .section__head {
+      text-align: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .section__header_center .section__head::after {
+        display: none; }
+
+/***** Общие стили секций КОНЕЦ *****/
 /***** Стили Прайс НАЧАЛО *****/
 .price {
   padding-bottom: 1.625rem; }
