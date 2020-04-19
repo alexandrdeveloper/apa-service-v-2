@@ -424,6 +424,10 @@ header {
 
 /***** Стили шапки КОНЕЦ *****/
 /***** Общие стили секций НАЧАЛО *****/
+section {
+  padding-top: 1.875rem;
+  padding-bottom: 3.75rem; }
+
 .section__head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -985,7 +989,8 @@ header {
   max-width: 16.688rem;
   position: relative;
   z-index: 4;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 2px solid #d9d9d9; }
   .certificate__item::after {
     content: '';
     display: block;
@@ -1003,4 +1008,82 @@ header {
     height: 100%;
     width: auto; }
 
+.certificate__link {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(250, 135, 63, 0.8);
+  opacity: 0;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out; }
+  .certificate__link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 49px;
+    width: 49px;
+    background-image: url("../../../img/certificate/search.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .certificate__link:hover {
+    opacity: 1; }
+
 /***** Стили "сертификаты" КОНЕЦ *****/
+/***** Стили "Не нашли что искали?" НАЧАЛО *****/
+.contacts__item {
+  width: 100%;
+  max-width: 16.875rem;
+  height: 4.625rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.688rem;
+  padding-right: 1.688rem;
+  margin-bottom: 1.875rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .contacts__item_messenger {
+    background-color: #027bfd; }
+  .contacts__item_telegram {
+    background-color: #29c0ff; }
+  .contacts__item_whatsapp {
+    background-color: #3dbd43; }
+  .contacts__item_viber {
+    background-color: #8057a1; }
+
+.contacts__ico {
+  display: block;
+  width: 40px;
+  margin-right: 2.5rem; }
+
+.contacts__name {
+  font-family: 'Geometria Bold', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.125rem; }
+
+/***** Стили "Не нашли что искали?" КОНЕЦ *****/
