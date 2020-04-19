@@ -405,19 +405,19 @@ header {
     .header-categories__item:nth-child(9) .header-categories__item-box:hover {
       border-color: #fff; }
   .header-categories__item:nth-child(1) .header-categories__item-box {
-    background-image: url("../../../img/categories/bg/dot-group-grey.png");
+    background-image: url("../img/categories/bg/dot-group-grey.png");
     background-size: 100%;
     background-repeat: no-repeat; }
   .header-categories__item:nth-child(2) .header-categories__item-box {
-    background-image: url("../../../img/categories/bg/dot-group-pink.png");
+    background-image: url("../img/categories/bg/dot-group-pink.png");
     background-size: 100%;
     background-repeat: no-repeat; }
   .header-categories__item:nth-child(3) .header-categories__item-box {
-    background-image: url("../../../img/categories/bg/dot-group-blue.png");
+    background-image: url("../img/categories/bg/dot-group-blue.png");
     background-size: 100%;
     background-repeat: no-repeat; }
   .header-categories__item:nth-child(4) .header-categories__item-box {
-    background-image: url("../../../img/categories/bg/dot-group-grey.png");
+    background-image: url("../img/categories/bg/dot-group-grey.png");
     background-size: 100%;
     background-repeat: no-repeat; }
   .header-categories__ico {
@@ -1047,7 +1047,7 @@ section {
             transform: translate(-50%, -50%);
     height: 49px;
     width: 49px;
-    background-image: url("../../../img/certificate/search.png");
+    background-image: url("../img/certificate/search.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat; }
