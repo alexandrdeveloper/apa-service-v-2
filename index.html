@@ -127,10 +127,10 @@
 			<!-- price-bar -->
 			<section class="price">
 				<div class="container">
-					<div class="row price__row"
-					><a href="" class="price__link">рассчитать уборку</a>
-					<a href="" class="price__link">прайс лист</a>
-				</div>
+					<div class="row price__row">
+						<a href="#" class="price__link price__modal-init">рассчитать уборку</a>
+						<a href="#" class="price__link">прайс лист</a>
+					</div>
 				</div>
 			</section>
 			<!-- /.price-bar -->
@@ -566,6 +566,30 @@
 	<!-- /.wrapper -->
 
 
+	<div class="price-modal">
+		<form action="#" class="price-modal__window">
+			<span class="price-modal__title">Заказать звонок</span>
+			<p class="price-modal__manual">Заполните форму и наш специалист, перезвонит и ответит на все интересующие Вас вопросы.</p>
+			<label for="user-name">Имя:<span>*</span></label>
+			<input type="text" id="user-name" >
+			<label for="user-phone">Телефон:<span>*</span></label>
+			<input type="text" id="user-phone" placeholder="+7 000 000 00 00">
+			<label for="user-email" >E-mail:</label>
+			<input type="text" id="user-email">
+			<span class="price-modal__necessarily">* обязательно для заполнения</span>
+			<div class="agreement">
+				<input type="checkbox">
+				<span>Согласие на <a href="#">обработку персональных данных</a></span>
+			</div>
+			<button type="submit">отправить</button>
+
+			<button class="price-modal__close">
+				<span></span><span></span>
+			</button>
+		</form>
+		<!-- /.price-modal__window -->
+	</div>
+	<!-- /.price-modal -->
 	
 	
 

@@ -14,5 +14,23 @@ $(document).ready(function() {
 	});
 
 
+	var formInit = $('.price__modal-init');
+	var priceModal = $('.price-modal');
+	var priceModalClose = $('.price-modal__close');
+
+	
+
+	formInit.on('click', function(e) {
+		e.preventDefault();
+		priceModal.toggleClass('price-modal_active');
+	});
+
+	priceModalClose.on('click',  function(e) {
+		e.preventDefault();
+		priceModal.removeClass('price-modal_active');	
+	});
+
+
+
 
 });
