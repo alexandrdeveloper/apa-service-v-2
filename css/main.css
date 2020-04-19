@@ -404,6 +404,22 @@ header {
     color: #fff; }
     .header-categories__item:nth-child(9) .header-categories__item-box:hover {
       border-color: #fff; }
+  .header-categories__item:nth-child(1) .header-categories__item-box {
+    background-image: url("../../../img/categories/bg/dot-group-grey.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .header-categories__item:nth-child(2) .header-categories__item-box {
+    background-image: url("../../../img/categories/bg/dot-group-pink.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .header-categories__item:nth-child(3) .header-categories__item-box {
+    background-image: url("../../../img/categories/bg/dot-group-blue.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .header-categories__item:nth-child(4) .header-categories__item-box {
+    background-image: url("../../../img/categories/bg/dot-group-grey.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
   .header-categories__ico {
     display: block;
     position: absolute;
@@ -1087,3 +1103,82 @@ section {
   font-size: 1.125rem; }
 
 /***** Стили "Не нашли что искали?" КОНЕЦ *****/
+/***** Стили Подвал НАЧАЛО *****/
+footer {
+  padding-top: 1.563rem;
+  padding-bottom: 3.125rem;
+  background: #9aa8b4;
+  color: #fff; }
+  footer h3 {
+    font-family: 'Geometria Medium', sans-serif;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 1.563rem;
+    margin-top: 0; }
+  footer p {
+    display: inline-block;
+    margin-bottom: 1.563em;
+    font-family: 'Geometria Regular', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin-top: 0; }
+  footer h4 {
+    font-family: 'Geometria Medium', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    padding-bottom: 0.625rem;
+    position: relative; }
+    footer h4::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 4.125rem;
+      height: 2px;
+      background-color: #fff; }
+  footer ul {
+    padding-left: 0;
+    margin: 0; }
+    footer ul li {
+      display: inline-block;
+      margin-bottom: 0.625rem; }
+      footer ul li a {
+        color: #fff;
+        font-size: 0.875rem; }
+        footer ul li a:hover {
+          font-family: 'Geometria Bold', sans-serif; }
+
+.footer__col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.footer__phone {
+  font-family: 'Geometria Bold', sans-serif;
+  font-size: 1.5rem;
+  color: #fff; }
+
+.footer__call {
+  color: #fa873f;
+  text-decoration: underline;
+  font-size: 1rem; }
+
+/***** Стили Подвал КОНЕЦ *****/
