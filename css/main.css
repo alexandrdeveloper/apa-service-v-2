@@ -122,7 +122,8 @@ button, input {
     padding-bottom: 1.5rem;
     border-top: 2px solid #cccccc;
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    padding-right: 40px; }
     .accordeon__title::after {
       content: '';
       display: block;
@@ -564,6 +565,35 @@ section {
       .section__header_center .section__head::after {
         display: none; }
 
+.dots-bg {
+  position: relative; }
+  .dots-bg::before, .dots-bg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background: url("../../../img/section/dots-bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .dots-bg::before {
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(60%, -40%);
+        -ms-transform: translate(60%, -40%);
+            transform: translate(60%, -40%); }
+  .dots-bg::after {
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(-60%, 5%);
+        -ms-transform: translate(-60%, 5%);
+            transform: translate(-60%, 5%); }
+  .dots-bg__top::after {
+    display: none; }
+  .dots-bg__bottom::before {
+    display: none; }
+
 /***** Общие стили секций КОНЕЦ *****/
 /***** Стили Прайс НАЧАЛО *****/
 .price {
@@ -600,55 +630,104 @@ section {
 
 /***** Стили Прайс КОНЕЦ *****/
 /***** Стили слайдера НАЧАЛО *****/
-.banner__slider {
-  height: 20.813rem; }
-
-.banner-text {
-  background-color: #eeeeee;
-  padding: 0;
+.banner {
+  z-index: 2;
   position: relative; }
-  .banner-text__title {
-    display: block;
-    position: absolute;
-    width: 120%;
-    top: 14%;
-    left: 18%;
-    font-family: 'Geometria Bold', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.25rem;
-    z-index: 2; }
-    .banner-text__title span {
-      background: #02a9d1;
-      display: inline-block;
-      width: auto;
-      padding: .8rem;
-      line-height: .9; }
-    .banner-text__title span:nth-child(odd) {
-      background: #e18753; }
-  .banner-text__link {
-    display: inline-block;
-    position: absolute;
-    bottom: 12%;
-    left: 18%; }
-
-.banner-image {
-  padding: 0;
-  height: 100%; }
-  .banner-image__item {
+  .banner__slider {
+    height: 20.813rem; }
+  .banner-text {
+    background-color: #eeeeee;
+    padding: 0;
     position: relative;
-    overflow: hidden;
-    outline: none;
-    width: 100%;
-    height: inherit; }
-    .banner-image__item img {
+    height: 20.813rem; }
+    .banner-text__carousel {
+      position: absolute;
+      top: 0;
+      left: 18%;
+      bottom: 0;
+      width: 360px;
+      z-index: 4; }
+    .banner-text__title {
       display: block;
       position: absolute;
+      width: 120%;
+      top: 14%;
       left: 0;
+      font-family: 'Geometria Bold', sans-serif;
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      z-index: 4; }
+      .banner-text__title span {
+        background: #02a9d1;
+        display: inline-block;
+        width: auto;
+        padding: .8rem;
+        line-height: .9; }
+      .banner-text__title span:nth-child(odd) {
+        background: #e18753; }
+    .banner-text__link {
+      display: inline-block;
+      position: absolute;
+      bottom: 12%;
+      left: 0; }
+    .banner-text__item {
+      height: 20.813rem; }
+  .banner-image {
+    padding: 0;
+    height: 20.813rem;
+    z-index: 2;
+    position: relative; }
+    .banner-image::after {
+      content: '';
+      display: block;
+      height: 90px;
+      width: 120px;
+      background: url("../img/banner/dots-banner.png");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 20px;
+      left: -20px; }
+    .banner-image__item {
+      position: relative;
+      overflow: hidden;
+      outline: none;
+      width: 100%;
+      height: 20.813rem; }
+      .banner-image__item img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%) translateZ(-2px);
+                transform: translateY(-50%) translateZ(-2px);
+        width: 100%;
+        z-index: -2; }
+    .banner-image .slick-arrow {
+      display: block;
+      position: absolute;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: 100%; }
+      font-size: 0;
+      background: transparent;
+      width: 20px;
+      height: 20px;
+      border: none; }
+    .banner-image .slick-prev {
+      left: -30%;
+      border-top: 2px solid #02adcc;
+      border-left: 2px solid #02adcc;
+      -webkit-transform: translateY(-50%) rotate(-45deg);
+          -ms-transform: translateY(-50%) rotate(-45deg);
+              transform: translateY(-50%) rotate(-45deg); }
+    .banner-image .slick-next {
+      right: 3%;
+      left: auto;
+      border-top: 2px solid #02adcc;
+      border-right: 2px solid #02adcc;
+      -webkit-transform: translateY(-50%) rotate(45deg);
+          -ms-transform: translateY(-50%) rotate(45deg);
+              transform: translateY(-50%) rotate(45deg); }
 
 /***** Стили сладера КОНЕЦ *****/
 /***** Стили "Как мы работаем" НАЧАЛО *****/
@@ -755,6 +834,9 @@ section {
 .team__item {
   border: 2px solid #d9d9d9;
   width: 100%;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -922,7 +1004,9 @@ section {
   max-width: 23rem;
   margin: auto;
   margin-bottom: 2.188rem;
-  position: relative; }
+  position: relative;
+  background: #fff;
+  z-index: 2; }
   .rating__item::after {
     content: '';
     display: block;
@@ -989,7 +1073,7 @@ section {
 /***** Стили "нам доверяют" КОНЕЦ *****/
 /***** Стили "сертификаты" НАЧАЛО *****/
 .certificate__carousel {
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1005,15 +1089,43 @@ section {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  position: relative;
+  margin: auto; }
+  .certificate__carousel .slick-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: transparent;
+    display: block; }
+  .certificate__carousel .slick-prev {
+    left: -40px;
+    z-index: 5;
+    border-top: 4px solid #cccccc;
+    border-left: 4px solid #cccccc;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg); }
+  .certificate__carousel .slick-next {
+    left: auto;
+    right: -40px;
+    border-top: 4px solid #cccccc;
+    border-right: 4px solid #cccccc;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg); }
 
 .certificate__item {
-  width: 100%;
-  max-width: 16.688rem;
+  width: 16.688rem;
   position: relative;
   z-index: 4;
   overflow: hidden;
-  border: 2px solid #d9d9d9; }
+  border: 2px solid #d9d9d9;
+  margin: 0 15px;
+  background: #fff; }
   .certificate__item::after {
     content: '';
     display: block;
@@ -1060,6 +1172,18 @@ section {
     background-repeat: no-repeat; }
   .certificate__link:hover {
     opacity: 1; }
+
+.certificate .dots-bg::before {
+  -webkit-transform: translate(20%, -10%);
+      -ms-transform: translate(20%, -10%);
+          transform: translate(20%, -10%);
+  z-index: -1; }
+
+.certificate .dots-bg::after {
+  -webkit-transform: translate(-20%, 10%);
+      -ms-transform: translate(-20%, 10%);
+          transform: translate(-20%, 10%);
+  z-index: -1; }
 
 /***** Стили "сертификаты" КОНЕЦ *****/
 /***** Стили "Не нашли что искали?" НАЧАЛО *****/
@@ -1357,82 +1481,143 @@ footer {
       text-decoration: underline; }
 
 /***** Стили Заказать звонок КОНЕЦ *****/
-/***** Стили Подвал НАЧАЛО ***** */
-footer {
-  padding-top: 1.563rem;
-  padding-bottom: 3.125rem;
-  background: #9aa8b4;
-  color: #fff; }
-  footer h3 {
-    font-family: 'Geometria Medium', sans-serif;
-    font-size: 1rem;
-    display: inline-block;
-    margin-bottom: 1.563rem;
-    margin-top: 0; }
-  footer p {
-    display: inline-block;
-    margin-bottom: 1.563em;
+/***** Стили Рассчитать НАЧАЛО *****/
+.calc {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out; }
+  .calc_visible {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  .calc__row {
+    background-color: #eeeeee;
+    padding-top: 22px;
+    padding-bottom: 32px;
+    padding-left: 26px;
+    padding-right: 26px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+  .calc input {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    text-align: center;
     font-family: 'Geometria Regular', sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.7;
-    margin-top: 0; }
-  footer h4 {
+    font-size: 18px;
+    padding: 14px; }
+    .calc input.bathroom, .calc input.rooms {
+      margin-left: 4px;
+      margin-right: 4px;
+      width: 60%; }
+  .calc button[type="submit"] {
+    width: 100%;
+    height: 100%;
     font-family: 'Geometria Medium', sans-serif;
     text-transform: uppercase;
-    font-size: 0.875rem;
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0.625rem;
-    padding-bottom: 0.625rem;
-    position: relative; }
-    footer h4::after {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 4.125rem;
-      height: 2px;
-      background-color: #fff; }
-  footer ul {
-    padding-left: 0;
-    margin: 0; }
-    footer ul li {
-      display: inline-block;
-      margin-bottom: 0.625rem; }
-      footer ul li a {
-        color: #fff;
-        font-size: 0.875rem; }
-        footer ul li a:hover {
-          font-family: 'Geometria Bold', sans-serif; }
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid #fa873f;
+    background-color: #fa873f;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+    cursor: pointer; }
+    .calc button[type="submit"]:hover {
+      background: transparent;
+      color: #fa873f; }
 
-.footer__col {
+.input-group {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
-.footer__phone {
-  font-family: 'Geometria Bold', sans-serif;
-  font-size: 1.5rem;
-  color: #fff; }
+.input-button {
+  display: block;
+  margin: 2px;
+  height: 51px;
+  width: 51px;
+  margin: 0;
+  background: #fff;
+  border: none;
+  text-align: center;
+  position: relative; }
+  .input-button span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #fa873f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .input-button span:nth-child(2) {
+      -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          -ms-transform: translate(-50%, -50%) rotate(90deg);
+              transform: translate(-50%, -50%) rotate(90deg); }
+  .input-button-minus span:nth-child(2) {
+    display: none; }
+  .input-button:hover {
+    background-color: #fa873f; }
+    .input-button:hover span {
+      background-color: #fff; }
 
-.footer__call {
-  color: #fa873f;
-  text-decoration: underline;
-  font-size: 1rem; }
-
-/***** Стили Подвал КОНЕЦ *****/
+/***** Стили Рассчитать КОНЕЦ *****/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    margin: auto;
+    margin-bottom: 2rem; }
+  .logo img {
+    max-height: 2.9rem; }
+  .navbar__head-slug .slag {
+    font-size: 1rem; }
+  .menu {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 2rem; }
+  .menu li {
+    margin-left: 0; }
+  .header-categories__ico {
+    width: 40px; }
+  .header-categories__title,
+  .price__link {
+    font-size: 1rem; }
+  .banner-text__title {
+    font-size: 2rem; }
+  .button-more {
+    padding: .6rem 2.1rem; }
+  .banner-image__item img {
+    height: 100%;
+    width: auto; }
+  .banner-image .slick-prev {
+    left: -46%; }
+  .examples__content {
+    min-height: 20rem; }
+  .equipment__info {
+    font-size: .7rem; }
+  .section__head-title {
+    line-height: 1;
+    font-size: 1.675rem; }
+  .section__head-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem; } }
