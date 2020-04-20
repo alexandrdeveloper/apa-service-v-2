@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	$('.menu-toggle').on('click', function() {
+		$(this).toggleClass('menu-toggle_close');
+		$('.wrapper').toggleClass('wrapper_moved');
+		$('body').toggleClass('no-scroll');
+	});
+
 
 	var acc = $('.accordeon__item > .accordeon__title');
 
@@ -32,6 +38,17 @@ $(document).ready(function() {
 
 	$('.certificate__carousel').slick({
 		slidesToShow: 3,
+		responsive: [{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 2,
+			}
+		},{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 1
+			}
+		}]
 	});
 
 
@@ -50,6 +67,12 @@ $(document).ready(function() {
 
 	$('.certificate__link').magnificPopup({
 	  type: 'image'
+	});
+
+	$('.calc-open').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('calc-open_active');
+		$('.calc').toggleClass('calc_visible-mobile');
 	});
 
 	

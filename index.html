@@ -27,8 +27,14 @@
 									<img src="img/header/logo.png" alt="АПА-СЕРВИС">
 								</a>
 							</h1>
+							<button class="menu-toggle">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
 							
 						</div>
+						
 						<div class="col-lg-5 col-md-6 navbar__head-item navbar__head-slug">
 							<span class="slag">Профессиональная уборка в Казани!</span>
 						</div>
@@ -50,8 +56,46 @@
 						<div class="col-md-12">
 							<ul class="menu">
 								<li><a href="#">главная</a></li>
-								<li><a href="#">услуги</a></li>
-								<li><a href="#">химчистка</a></li>
+								<li class="carret">
+									<a href="#">услуги</a>
+									<ul>
+										<li class="subcarret">
+											<a href="#">УБОРКА КВАРТИР В КАЗАНИ</a>
+											<ul>
+												<li><a href="#">УСЛУГИ КЛИНИНГА</a></li>
+												<li><a href="#">ГЕНЕРАЛЬНАЯ УБОРКА В ЖИЛЫХ КОМНАТАХ</a></li>
+											</ul>
+										</li>
+										<li class="subcarret">
+											<a href="#">УБОРКА ПОСЛЕ РЕМОНТА</a>
+											<ul>
+												<li><a href="#">УБОРКА КВАРТИРЫ ПОСЛЕ РЕМОНТА</a></li>
+												<li><a href="#">УБОРКА ДОМА ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+												<li><a href="#">УБОРКА ПОМЕЩЕНИЙ ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+												<li><a href="#">УБОРКА ПОМЕЩЕНИЙ ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+												<li><a href="#">УБОРКА КОТТЕДЖЕЙ ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+											</ul>
+										</li>
+										<li><a href="#">МЫТЬЕ ОКОН В КАЗАНИ</a></li>
+										<li class="subcarret">
+											<a href="#">УСЛУГИ КЛИНИНГА ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ </a>
+											<ul>
+												<li><a href="#">УБОРКА ОФИСОВ И ПРОМЫШЛЕННЫХ ПОМЕЩЕНИЙ</a></li>
+											</ul>
+										</li>
+										<li><a href="#">ВСЕ УСЛУГИ</a></li>
+									</ul>
+								</li>
+
+								<li class="carret">
+									<a href="#">химчистка</a>
+									<ul>
+										<li><a href="#">ХИМЧИСТКА МЯГКОЙ МЕБЕЛИ</a></li>
+										<li><a href="#">ХИМЧИСТКА ДИВАНОВ</a></li>
+										<li><a href="#">ХИМЧИСТКА СТУЛЬЕВ</a></li>
+										<li><a href="#">ХИМЧИСТКА С ВЫЕЗДОМ</a></li>
+									</ul>
+								</li>
 								<li><a href="#">новости</a></li>
 								<li><a href="#">вакансии</a></li>
 								<li><a href="#">прайс</a></li>
@@ -62,6 +106,9 @@
 				</div>
 			</div>
 			<!-- /.navbar -->
+			
+			
+			
 
 			<!-- header-categories -->
 			<div class="header-categories">
@@ -121,6 +168,54 @@
 			<!-- /.header-categories -->
 		</header>
 		<!-- /header -->
+
+		<ul class="mobile-menu">
+				<li><a href="#">главная</a></li>
+				<li class="carret">
+					<a href="#">услуги</a>
+					<ul>
+						<li class="subcarret">
+							<a href="#">УБОРКА КВАРТИР В КАЗАНИ</a>
+							<ul>
+								<li><a href="#">УСЛУГИ КЛИНИНГА</a></li>
+								<li><a href="#">ГЕНЕРАЛЬНАЯ УБОРКА В ЖИЛЫХ КОМНАТАХ</a></li>
+							</ul>
+						</li>
+						<li class="subcarret">
+							<a href="#">УБОРКА ПОСЛЕ РЕМОНТА</a>
+							<ul>
+								<li><a href="#">УБОРКА КВАРТИРЫ ПОСЛЕ РЕМОНТА</a></li>
+								<li><a href="#">УБОРКА ДОМА ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+								<li><a href="#">УБОРКА ПОМЕЩЕНИЙ ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+								<li><a href="#">УБОРКА ПОМЕЩЕНИЙ ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+								<li><a href="#">УБОРКА КОТТЕДЖЕЙ ПОСЛЕ РЕМОНТА В КАЗАНИ</a></li>
+							</ul>
+						</li>
+						<li><a href="#">МЫТЬЕ ОКОН В КАЗАНИ</a></li>
+						<li class="subcarret">
+							<a href="#">УСЛУГИ КЛИНИНГА ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ </a>
+							<ul>
+								<li><a href="#">УБОРКА ОФИСОВ И ПРОМЫШЛЕННЫХ ПОМЕЩЕНИЙ</a></li>
+							</ul>
+						</li>
+						<li><a href="#">ВСЕ УСЛУГИ</a></li>
+					</ul>
+				</li>
+
+				<li class="carret">
+					<a href="#">химчистка</a>
+					<ul>
+						<li><a href="#">ХИМЧИСТКА МЯГКОЙ МЕБЕЛИ</a></li>
+						<li><a href="#">ХИМЧИСТКА ДИВАНОВ</a></li>
+						<li><a href="#">ХИМЧИСТКА СТУЛЬЕВ</a></li>
+						<li><a href="#">ХИМЧИСТКА С ВЫЕЗДОМ</a></li>
+					</ul>
+				</li>
+				<li><a href="#">новости</a></li>
+				<li><a href="#">вакансии</a></li>
+				<li><a href="#">прайс</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
 
 		<!-- main -->
 		<main>
@@ -618,9 +713,10 @@
 	<!-- /.price-modal -->
 	
 	<form action="#" class="calc">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row calc__row">
-				<div class="col-md-3 input-group">
+				<button class="calc-open">Расчитать</button>
+				<div class="col-lg-3 col-md-6 col-sm-6 input-group">
 					<button class="input-button input-button-minus rooms-minus">
 						<span></span><span></span>
 					</button>
@@ -629,7 +725,7 @@
 						<span></span><span></span>
 					</button>
 				</div>
-				<div class="col-md-3 input-group">
+				<div class="col-lg-3 col-md-6 col-sm-6 input-group">
 					<button class="input-button input-button-minus bathroom-minus">
 						<span></span><span></span>
 					</button>
@@ -638,10 +734,10 @@
 						<span></span><span></span>
 					</button>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6 col-sm-6">
 					<input type="text" placeholder="+7 000 000 00 00">
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6 col-sm-6">
 					<button type="submit">Расчитать</button>
 				</div>
 			</div>
