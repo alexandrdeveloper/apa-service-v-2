@@ -14,6 +14,7 @@ $(document).ready(function() {
 			$(this).parent('.accordeon__item').removeClass('accordeon__item_active');
 			$(this).next('.accordeon__info').fadeOut(300);
 		} else {
+			$('.accordeon__item').removeClass('accordeon__item_active');
 			$(this).parent('.accordeon__item').toggleClass('accordeon__item_active');
 			$(this).next('.accordeon__info').show(300);
 		}
@@ -102,6 +103,7 @@ $(document).ready(function() {
 	}, { offset: '50%' });
 
 		
+	$(".phone-num-input").inputmask("+7 (999) 999 99 99");
 
 		
 				

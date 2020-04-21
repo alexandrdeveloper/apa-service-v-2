@@ -84,7 +84,7 @@ button, input {
 
 .button-more {
   display: inline-block;
-  padding: 0.875rem 2.5rem;
+  padding: 14px 40px;
   border: 2px solid #02adcc;
   color: #02adcc;
   font-family: 'Geometria Bold', sans-serif;
@@ -120,16 +120,16 @@ button, input {
               transform: translateY(0); }
 
 .accordeon {
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
+  padding-left: 30px;
+  padding-right: 30px;
   width: 100%; }
   .accordeon__title {
     font-family: 'Geometria Medium', sans-serif;
     text-decoration: underline;
     color: #fa873f;
-    font-size: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-top: 2px solid #cccccc;
     cursor: pointer;
     position: relative;
@@ -140,8 +140,8 @@ button, input {
       position: absolute;
       top: 50%;
       right: 10px;
-      width: 1.438rem;
-      height: 1.438rem;
+      width: 23px;
+      height: 23px;
       background-image: url("../img/acc/arrow.png");
       background-size: 100%;
       background-repeat: no-repeat;
@@ -155,9 +155,9 @@ button, input {
       transition: transform .3s;
       transition: transform .3s, -webkit-transform .3s; }
   .accordeon__info {
-    padding-left: 3.125rem;
-    padding-right: 3.125rem;
-    padding-bottom: 3.125rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     -webkit-transition: .3s ease-out;
     -o-transition: .3s ease-out;
     transition: .3s ease-out; }
@@ -165,7 +165,7 @@ button, input {
       margin: 0;
       font-family: 'Geometria Medium', sans-serif;
       color: #4e4e4e;
-      font-size: 0.875rem;
+      font-size: 14px;
       line-height: 2.14; }
   .accordeon__item:last-child {
     border-bottom: 2px solid #cccccc; }
@@ -187,7 +187,7 @@ button, input {
 /***** Базовые стили КОНЕЦ *****/
 /***** Стили шапки НАЧАЛО *****/
 header {
-  padding: 1.4rem 0; }
+  padding: 22px 0; }
 
 .logo {
   display: -webkit-box;
@@ -204,7 +204,7 @@ header {
           align-items: center; }
   .logo img {
     display: block;
-    max-height: 3.75rem;
+    max-height: 60px;
     width: auto; }
 
 .navbar__head-item {
@@ -219,7 +219,7 @@ header {
 
 .navbar__head-slug .slag {
   font-family: 'Geometria Medium', sans-serif;
-  font-size: 1.25rem;
+  font-size: 20px;
   color: #02adcc;
   line-height: .9; }
 
@@ -277,10 +277,10 @@ header {
             align-items: center; }
     .head-contacts__social a {
       display: inline-block;
-      margin-right: .25rem; }
+      margin-right: 4px; }
       .head-contacts__social a img {
         display: block;
-        width: 1.25rem; }
+        width: 20px; }
   .head-contacts__phone {
     display: -webkit-box;
     display: -webkit-flex;
@@ -298,15 +298,15 @@ header {
     position: relative;
     width: 100%; }
     .head-contacts__phone-num {
-      font-size: 1.5rem;
+      font-size: 24px;
       font-family: 'Geometria Bold', sans-serif;
       color: #f66931;
       display: inline-block;
-      margin-bottom: .5rem; }
+      margin-bottom: 8px; }
       .head-contacts__phone-num span {
-        font-size: 1.125rem; }
+        font-size: 18px; }
     .head-contacts__phone-schedule {
-      font-size: .75rem;
+      font-size: 12px;
       margin-top: 0;
       margin-bottom: 0;
       display: block;
@@ -315,7 +315,7 @@ header {
       top: 100%;
       right: 0;
       text-align: right;
-      line-height: .875rem; }
+      line-height: 14px; }
 
 .menu {
   width: 100%;
@@ -336,22 +336,22 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 0; }
   .menu li {
     display: inline-block;
-    margin-left: 3.125rem; }
+    margin-left: 50px; }
     .menu li a {
       font-family: 'Geometria Medium', sans-serif;
       color: #54565a;
-      font-size: .75rem;
+      font-size: 12px;
       text-transform: uppercase;
       -webkit-transition: .3s ease-out;
       -o-transition: .3s ease-out;
       transition: .3s ease-out;
       position: relative;
-      padding-bottom: 0.375rem; }
+      padding-bottom: 6px; }
       .menu li a::after {
         content: '';
         display: block;
@@ -365,7 +365,7 @@ header {
         bottom: 0;
         left: 0; }
       .menu li a:hover {
-        font-family: 'Geometria Bold', sans-serif;
+        text-shadow: 0 0 1px #404040;
         color: #404040; }
         .menu li a:hover::after {
           width: 40px; }
@@ -424,16 +424,26 @@ header {
           height: 0;
           border: 5px solid transparent;
           border-bottom: 5px solid #447c8d; }
+        .menu li.carret ul::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 100%;
+          height: 100%;
+          width: 50%; }
         .menu li.carret ul li {
           margin-left: 0;
           position: relative;
           width: 100%;
           padding: 6px 16px; }
           .menu li.carret ul li a {
+            color: #404040;
             text-transform: uppercase; }
             .menu li.carret ul li a:hover {
               color: #fa873f;
-              font-family: 'Geometria Medium', sans-serif; }
+              font-family: 'Geometria Medium', sans-serif;
+              text-shadow: none; }
             .menu li.carret ul li a::after {
               display: none; }
           .menu li.carret ul li:first-child {
@@ -484,12 +494,12 @@ header {
     display: block;
     width: 100%;
     position: relative;
-    margin-bottom: 1.875rem;
+    margin-bottom: 30px;
     background: #eaeaea;
     color: #86c2d8;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    max-width: 16.8rem;
+    max-width: 268px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid transparent;
@@ -555,25 +565,25 @@ header {
     display: block;
     position: absolute;
     width: 70px;
-    top: 1.25rem;
-    left: 1.25rem;
+    top: 20px;
+    left: 20px;
     z-index: 2; }
   .header-categories__title {
     display: block;
     position: absolute;
     top: 50%;
-    left: 1.25rem;
-    right: 1.25rem;
+    left: 20px;
+    right: 20px;
     font-family: 'Geometria Medium', sans-serif;
-    font-size: 1.5rem;
+    font-size: 24px;
     text-transform: uppercase;
     z-index: 2; }
 
 /***** Стили шапки КОНЕЦ *****/
 /***** Общие стили секций НАЧАЛО *****/
 section {
-  padding-top: 1.875rem;
-  padding-bottom: 3.75rem; }
+  padding-top: 30px;
+  padding-bottom: 60px; }
 
 .section__head {
   display: -webkit-box;
@@ -605,24 +615,24 @@ section {
     background-repeat: repeat-x;
     position: absolute;
     z-index: -1;
-    bottom: 0.75rem; }
+    bottom: 12px; }
   .section__head-title {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     color: #353535;
-    font-size: 1.875rem;
+    font-size: 30px;
     text-transform: uppercase;
     font-family: 'Geometria Medium', sans-serif;
-    padding: 0.75rem 1.875rem;
+    padding: 12px 30px;
     background: #fff;
     line-height: 1; }
   .section__head-link {
     font-family: 'Geometria Medium', sans-serif;
     color: #a8a8a8;
-    font-size: 1.125rem;
+    font-size: 18px;
     text-decoration: underline;
-    padding: 0.75rem 1.875rem;
+    padding: 12px 30px;
     border: 1px solid transparent;
     background-color: #fff;
     -webkit-transition: .3s ease-out;
@@ -633,37 +643,37 @@ section {
       content: '\f105';
       display: inline-block;
       font-family: 'FA-PR-400';
-      margin-left: 1.375rem;
+      margin-left: 22px;
       vertical-align: baseline; }
     .section__head-link:hover {
       border: 1px solid #a8a8a8; }
 
 .section__description {
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
-  margin-top: 1.875rem; }
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 30px; }
   .section__description p {
     display: block;
     width: 100%;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0;
     font-family: 'Geometria Medium', sans-serif;
     color: #4e4e4e;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 2.14; }
 
 .section__slug {
   font-family: 'Geometria Medium', sans-serif;
   text-transform: uppercase;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #353535;
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
+  padding-left: 30px;
+  padding-right: 30px;
   line-height: 1.33; }
 
 .section__header {
-  padding: 2.625rem 0; }
+  padding: 42px 0; }
   .section__header_center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -720,7 +730,7 @@ section {
 /***** Общие стили секций КОНЕЦ *****/
 /***** Стили Прайс НАЧАЛО *****/
 .price {
-  padding-bottom: 1.625rem; }
+  padding-bottom: 26px; }
   .price__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -740,8 +750,8 @@ section {
     font-family: 'Geometria Medium', sans-serif;
     text-transform: uppercase;
     text-decoration: underline;
-    padding: 0 1rem;
-    font-size: 1.125rem; }
+    padding: 0 16px;
+    font-size: 18px; }
     .price__link:hover {
       font-family: 'Geometria Bold', sans-serif; }
     .price__link:first-child {
@@ -757,13 +767,13 @@ section {
   z-index: 2;
   position: relative; }
   .banner__slider {
-    height: 20.813rem;
+    height: 330px;
     outline: none; }
   .banner-text {
     background-color: #eeeeee;
     padding: 0;
     position: relative;
-    height: 20.813rem; }
+    height: 330px; }
     .banner-text__carousel {
       position: absolute;
       top: 0;
@@ -779,13 +789,13 @@ section {
       left: 0;
       font-family: 'Geometria Bold', sans-serif;
       text-transform: uppercase;
-      font-size: 2.25rem;
+      font-size: 36px;
       z-index: 4; }
       .banner-text__title span {
         background: #02a9d1;
         display: inline-block;
         width: auto;
-        padding: .8rem;
+        padding: 12px;
         line-height: .9;
         clear: both; }
       .banner-text__title span:nth-child(odd) {
@@ -796,10 +806,10 @@ section {
       bottom: 12%;
       left: 0; }
     .banner-text__item {
-      height: 20.813rem; }
+      height: 330px; }
   .banner-image {
     padding: 0;
-    height: 20.813rem;
+    height: 330px;
     z-index: 2;
     position: relative;
     outline: none; }
@@ -820,7 +830,7 @@ section {
       overflow: hidden;
       outline: none;
       width: 100%;
-      height: 20.813rem; }
+      height: 330px; }
       .banner-image__item img {
         display: block;
         position: absolute;
@@ -873,7 +883,7 @@ section {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
-  min-height: 35.938rem; }
+  min-height: 575px; }
 
 .examples__item {
   width: -webkit-calc(100% / 3);
@@ -885,9 +895,9 @@ section {
   text-align: center;
   font-family: 'Geometria Medium', sans-serif;
   text-transform: uppercase;
-  font-size: 1.125rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   color: #fff;
   background-color: #c2c2c2;
   z-index: 4;
@@ -904,10 +914,10 @@ section {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 2.875;
+    width: 46px;
     height: 0;
     border: 30px solid transparent;
-    border-top: 1.5rem solid #fa873f;
+    border-top: 24px solid #fa873f;
     z-index: 4;
     opacity: 0;
     -webkit-transition: .3s ease-out;
@@ -917,10 +927,10 @@ section {
 .examples__banner {
   position: absolute;
   bottom: 0;
-  top: 3.9rem;
+  top: 62px;
   left: 0;
   right: 0;
-  height: 32rem;
+  height: 512px;
   opacity: 0;
   z-index: 1;
   -webkit-transition: .3s ease-out;
@@ -973,9 +983,9 @@ section {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  height: 12.25rem;
+  height: 196px;
   z-index: 4;
-  margin-bottom: 2.95rem; }
+  margin-bottom: 48px; }
   .team__item::before {
     content: '';
     display: block;
@@ -990,14 +1000,14 @@ section {
     content: '';
     display: block;
     position: absolute;
-    top: -webkit-calc(101% + 0.438rem);
-    top: calc(101% + 0.438rem);
+    top: -webkit-calc(101% + 7px);
+    top: calc(101% + 7px);
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 10.625rem;
-    height: 2.5rem;
+    width: 170px;
+    height: 40px;
     background-image: url("../img/team/dot.png");
     background-repeat: repeat; }
 
@@ -1019,7 +1029,7 @@ section {
   .team__image img {
     display: block;
     width: 80%;
-    max-width: 9.563rem; }
+    max-width: 153px; }
 
 .team__info {
   width: 50%;
@@ -1027,35 +1037,35 @@ section {
 
 .team__name {
   font-family: 'Geometria Bold', sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   color: #404040;
   text-transform: uppercase;
-  max-width: 6.25rem;
+  max-width: 100px;
   display: inline-block;
   position: absolute;
-  top: 3.75rem;
+  top: 60px;
   left: 0; }
 
 .team__specialty {
   font-family: 'Geometria Medium', sans-serif;
   color: #b3b3b3;
-  font-size: 0.875rem;
+  font-size: 14px;
   position: absolute;
-  bottom: 3.75rem;
+  bottom: 60px;
   left: 0; }
 
 .team__rating {
   position: absolute;
   top: 0;
-  right: 1rem;
-  padding-top: .7rem;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-  padding-bottom: 0.4rem;
+  right: 16px;
+  padding-top: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 6px;
   background-color: #53c7dc;
   color: #fff;
   font-family: 'Geometria Bold', sans-serif;
-  font-size: 1.125rem; }
+  font-size: 18px; }
   .team__rating::after {
     content: '';
     display: block;
@@ -1063,8 +1073,8 @@ section {
     top: 100%;
     left: 0;
     width: 100%;
-    border: 1.5rem solid transparent;
-    border-top: 1.3rem solid #53c7dc; }
+    border: 24px solid transparent;
+    border-top: 21px solid #53c7dc; }
 
 /***** Стили "Наши сотрудники" КОНЕЦ *****/
 /***** Стили "Оборудование" НАЧАЛО *****/
@@ -1086,12 +1096,12 @@ section {
 .equipment__info {
   position: absolute;
   font-family: 'Geometria Medium', sans-serif;
-  font-size: 1.1rem;
+  font-size: 18px;
   color: #404040;
   text-align: right;
   width: 60%;
   top: 20%;
-  right: 1rem; }
+  right: 16px; }
   .equipment__info span {
     display: inline-block; }
 
@@ -1108,6 +1118,9 @@ section {
 /***** Стили "часто задаваемые вопросы" НАЧАЛО *****/
 /***** Стили "часто задаваемые вопросы" КОНЕЦ *****/
 /***** Стили "нам доверяют" НАЧАЛО *****/
+.rating a {
+  color: #404040; }
+
 .rating__row {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1125,11 +1138,11 @@ section {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-height: 6.875rem;
+  min-height: 110px;
   width: 100%;
-  max-width: 23rem;
+  max-width: 368px;
   margin: auto;
-  margin-bottom: 2.188rem;
+  margin-bottom: 35px;
   position: relative;
   background: #fff;
   z-index: 2; }
@@ -1146,14 +1159,14 @@ section {
 
 .rating__image {
   width: 100%;
-  max-width: 6.25rem;
+  max-width: 100px;
   height: inherit;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-top: 16px;
+  padding-bottom: 16px; }
   .rating__image img {
     display: block;
     width: 80%;
-    max-width: 3.75rem;
+    max-width: 60px;
     margin: auto; }
 
 .rating__info {
@@ -1171,26 +1184,26 @@ section {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 1.138rem;
-  padding-bottom: 1.438rem;
+  padding-top: 18px;
+  padding-bottom: 23px;
   width: 100%; }
 
 .rating__name {
   font-family: 'Geometria Bold', sans-serif;
   text-transform: uppercase;
   color: #404040;
-  font-size: 1.125rem; }
+  font-size: 18px; }
 
 .rating__value {
   font-family: 'Geometria Medium', sans-serif; }
 
 .rating__mark {
   font-family: 'Geometria Medium', sans-serif;
-  padding-top: 1.138rem;
-  font-size: 0.875rem;
+  padding-top: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   width: 100%;
-  max-width: 5rem;
+  max-width: 80px;
   text-align: center; }
   .rating__mark span {
     display: inline-block;
@@ -1245,7 +1258,7 @@ section {
             transform: translateY(-50%) rotate(45deg); }
 
 .certificate__item {
-  width: 16.688rem;
+  width: 267px;
   position: relative;
   z-index: 4;
   overflow: hidden;
@@ -1315,8 +1328,8 @@ section {
 /***** Стили "Не нашли что искали?" НАЧАЛО *****/
 .contacts__item {
   width: 100%;
-  max-width: 16.875rem;
-  height: 4.625rem;
+  max-width: 270px;
+  height: 74px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1334,9 +1347,9 @@ section {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1.688rem;
-  padding-right: 1.688rem;
-  margin-bottom: 1.875rem;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-bottom: 30;
   margin-left: auto;
   margin-right: auto; }
   .contacts__item_messenger {
@@ -1351,42 +1364,42 @@ section {
 .contacts__ico {
   display: block;
   width: 40px;
-  margin-right: 2.5rem; }
+  margin-right: 40px; }
 
 .contacts__name {
   font-family: 'Geometria Bold', sans-serif;
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.125rem; }
+  font-size: 18px; }
 
 /***** Стили "Не нашли что искали?" КОНЕЦ *****/
 /***** Стили Подвал НАЧАЛО *****/
 footer {
-  padding-top: 1.563rem;
-  padding-bottom: 3.125rem;
+  padding-top: 25px;
+  padding-bottom: 50px;
   background: #9aa8b4;
   color: #fff; }
   footer h3 {
     font-family: 'Geometria Medium', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     display: inline-block;
-    margin-bottom: 1.563rem;
+    margin-bottom: 25px;
     margin-top: 0; }
   footer p {
     display: inline-block;
-    margin-bottom: 1.563em;
+    margin-bottom: 25px;
     font-family: 'Geometria Regular', sans-serif;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.7;
     margin-top: 0; }
   footer h4 {
     font-family: 'Geometria Medium', sans-serif;
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 14px;
     display: inline-block;
     margin-top: 0;
-    margin-bottom: 0.625rem;
-    padding-bottom: 0.625rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     position: relative; }
     footer h4::after {
       content: '';
@@ -1394,7 +1407,7 @@ footer {
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 4.125rem;
+      width: 66px;
       height: 2px;
       background-color: #fff; }
   footer ul {
@@ -1411,10 +1424,10 @@ footer {
             flex-direction: column; }
     footer ul li {
       display: inline-block;
-      margin-bottom: 0.625rem; }
+      margin-bottom: 11px; }
       footer ul li a {
         color: #fff;
-        font-size: 0.875rem; }
+        font-size: 14px; }
         footer ul li a:hover {
           font-family: 'Geometria Bold', sans-serif; }
 
@@ -1439,13 +1452,13 @@ footer {
 
 .footer__phone {
   font-family: 'Geometria Bold', sans-serif;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #fff; }
 
 .footer__call {
   color: #fa873f;
   text-decoration: underline;
-  font-size: 1rem; }
+  font-size: 16px; }
 
 /***** Стили Подвал КОНЕЦ *****/
 /***** Стили Заказать звонок НАЧАЛО *****/
@@ -1456,7 +1469,7 @@ footer {
   bottom: 0;
   z-index: 10;
   width: 100%;
-  max-width: 27.5rem;
+  max-width: 440px;
   -webkit-transition: .3s ease-out;
   -o-transition: .3s ease-out;
   transition: .3s ease-out;
@@ -1472,7 +1485,7 @@ footer {
     top: 0;
     bottom: 0;
     width: 100%;
-    max-width: 27.5rem;
+    max-width: 440px;
     background: #e9e9e9;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1491,38 +1504,38 @@ footer {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 3.375rem 2.5rem;
+    padding: 54px 40px;
     overflow-y: auto;
     z-index: 11; }
   .price-modal__title {
     font-family: 'Geometria Bold', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: #514d4b;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 1.75rem; }
+    margin-bottom: 28px; }
   .price-modal__manual {
     margin-top: 0;
     display: inline-block;
-    margin-bottom: 1.375rem;
+    margin-bottom: 22px;
     color: #514d4b;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.29;
     font-family: 'Geometria Light', sans-serif; }
   .price-modal label {
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 1.29;
     margin-bottom: 8px;
     font-family: 'Geometria Light', sans-serif; }
     .price-modal label span {
       color: #c4113c;
-      font-size: 1rem; }
+      font-size: 16px; }
   .price-modal input[type="text"] {
     width: 100%;
     border: none;
     background-color: #fff;
-    padding: .75rem 1.25rem;
-    font-size: 1.125rem;
+    padding: 12px 20px;
+    font-size: 18px;
     font-family: 'Geometria Light', sans-serif;
     color: #514d4b;
     margin-bottom: 12px; }
@@ -1539,16 +1552,16 @@ footer {
   .price-modal__necessarily {
     color: #c10230;
     font-family: 'Geometria Light', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     display: inline-block;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 20px; }
   .price-modal button[type="submit"] {
     width: 100%;
-    max-width: 15.375rem;
+    max-width: 246px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Geometria Bold', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: #fff;
     border: 2px solid #fff;
     padding: 12px 10px;
@@ -1563,8 +1576,8 @@ footer {
       background: #c10230; }
   .price-modal__close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 16px;
+    right: 16px;
     border: none;
     background: transparent;
     height: 30px;
@@ -1607,13 +1620,13 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3.313rem; }
+  margin-bottom: 53px; }
   .agreement input {
     margin-right: 15px; }
   .agreement span {
     font-family: 'Geometria Regular', sans-serif;
     color: #353535;
-    font-size: 0.75rem; }
+    font-size: 12px; }
     .agreement span a {
       color: #353535;
       text-decoration: underline; }
@@ -1627,9 +1640,9 @@ footer {
   left: 0;
   right: 0;
   z-index: 10;
-  -webkit-transform: translateY(140%);
-      -ms-transform: translateY(140%);
-          transform: translateY(140%);
+  -webkit-transform: translateY(150%);
+      -ms-transform: translateY(150%);
+          transform: translateY(150%);
   -webkit-transition: .3s ease-out;
   -o-transition: .3s ease-out;
   transition: .3s ease-out; }
@@ -1727,24 +1740,24 @@ footer {
 /***** Стили Рассчитать КОНЕЦ *****/
 @media screen and (min-width: 992px) and (max-width: 1360px) {
   .header-categories__title {
-    font-size: 1.2rem; }
+    font-size: 19px; }
   .header-categories__ico {
     width: 50px; }
   .examples__content {
-    min-height: 26rem; }
+    min-height: 416px; }
   .equipment__info {
-    font-size: .95rem; }
+    font-size: 15px; }
   .rating__mark {
-    max-width: 3.6rem; }
+    max-width: 58px; }
   .rating__name {
-    font-size: 1rem; }
+    font-size: 16px; }
   .contacts__ico {
     width: 30px;
-    margin-right: 1.5rem; }
+    margin-right: 24px; }
   .contacts__name {
-    font-size: 1rem; }
+    font-size: 16px; }
   .footer__phone {
-    font-size: 1.2rem; }
+    font-size: 19px; }
   .calc__row {
     padding-left: 10px;
     padding-right: 10px; }
@@ -1760,44 +1773,44 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   h1 {
     margin: auto;
-    margin-bottom: 2rem; }
+    margin-bottom: 32px; }
   .logo img {
-    max-height: 2.9rem; }
+    max-height: 46px; }
   .navbar__head-slug .slag {
-    font-size: 1rem; }
+    font-size: 16px; }
   .menu {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 2rem; }
+    margin-top: 32px; }
   .menu li {
     margin-left: 0; }
   .header-categories__ico {
     width: 40px; }
   .header-categories__title,
   .price__link {
-    font-size: 1rem; }
+    font-size: 16px; }
   .banner-text__title {
-    font-size: 2rem; }
+    font-size: 32px; }
   .button-more {
-    padding: .6rem 2.1rem; }
+    padding: 10px 34px; }
   .banner-image__item img {
     height: 100%;
     width: auto; }
   .banner-image .slick-prev {
     left: -46%; }
   .examples__content {
-    min-height: 20rem; }
+    min-height: 320px; }
   .equipment__info {
-    font-size: .7rem; }
+    font-size: 11px; }
   .section__head-title {
     line-height: 1;
-    font-size: 1.675rem; }
+    font-size: 26px; }
   .section__head-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1rem; } }
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px; } }
 
 @media screen and (max-width: 767px) {
   h1 {
@@ -1806,19 +1819,19 @@ footer {
     margin-top: 0; }
   .navbar__head-slug .slag {
     text-align: center;
-    font-size: 1rem;
-    margin-bottom: 1.2rem; }
+    font-size: 16px;
+    margin-bottom: 19px; }
   .head-contacts {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
   .head-contacts__phone {
-    margin-bottom: 5rem; }
+    margin-bottom: 80px; }
   .head-contacts__phone-num {
-    font-size: 1.1rem; }
+    font-size: 18px; }
     .head-contacts__phone-num span {
-      font-size: .9rem; }
+      font-size: 14px; }
   .menu {
     display: none; }
   .price__row {
@@ -1838,7 +1851,7 @@ footer {
   .price__link {
     width: 90%;
     text-align: center !important;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 19px; }
   .calc input,
   .calc button {
     margin-bottom: 15px;
@@ -1865,7 +1878,7 @@ footer {
     .banner-text__item {
       width: 80%; }
     .banner-text__title {
-      font-size: 1.2rem; }
+      font-size: 19px; }
       .banner-text__title span {
         float: left;
         clear: both; }
@@ -1983,22 +1996,22 @@ footer {
             align-items: center; }
     .section__head h2 {
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 22px;
       line-height: 1.2; }
   .section__head-link {
-    font-size: 1rem; }
+    font-size: 16px; }
   .section__description p {
     padding-left: 0;
     padding-right: 0; }
   .examples__content {
     min-height: 0;
-    height: 9rem; }
+    height: 144px; }
   .examples__nav {
-    font-size: .6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
+    font-size: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px; }
   .examples__banner {
-    top: 2.5rem; }
+    top: 40px; }
   .certificate__carousel .slick-prev {
     left: -20px; }
   .certificate__carousel .slick-next {
@@ -2011,7 +2024,7 @@ footer {
     bottom: 100%;
     left: 0;
     width: 100%;
-    font-size: 1rem;
+    font-size: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #fa873f;
@@ -2023,8 +2036,8 @@ footer {
     .calc-open::after {
       content: '';
       display: inline-block;
-      height: .8rem;
-      width: .8rem;
+      height: 12px;
+      width: 12px;
       border-top: 2px solid #fff;
       border-left: 2px solid #fff;
       -webkit-transform: rotate(45deg);
@@ -2044,9 +2057,9 @@ footer {
 
 @media screen and (max-width: 420px) {
   .banner-text {
-    height: 4rem; }
+    height: 64px; }
   .banner-text__title {
-    font-size: 1rem;
+    font-size: 16px;
     width: 70%; }
   .banner-image {
     width: 100%; }
@@ -2054,10 +2067,10 @@ footer {
     height: 100%;
     width: auto; }
   .button-more {
-    padding: 0.675rem 1.5rem; }
+    padding: 10px 24px; }
   .examples__content {
     min-height: 0;
-    height: 6rem; }
+    height: 96px; }
   .calc input,
   .calc button {
     margin-bottom: 15px;
