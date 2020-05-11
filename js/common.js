@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 
 	$('.menu-toggle').on('click', function() {
 		$(this).toggleClass('menu-toggle_close');
@@ -9,14 +10,19 @@ $(document).ready(function() {
 
 	var acc = $('.accordeon__item > .accordeon__title');
 
+	$('.accordeon__item_active>.accordeon__info').slideDown(300);
+
 	acc.on('click', function() {
 		if ($(this).parent('.accordeon__item').hasClass('accordeon__item_active')) {
+			$(this).next('.accordeon__info').slideUp(300);
 			$(this).parent('.accordeon__item').removeClass('accordeon__item_active');
-			$(this).next('.accordeon__info').fadeOut(300);
+			
 		} else {
 			$('.accordeon__item').removeClass('accordeon__item_active');
+			$('.accordeon__info').slideUp(300);
+			$(this).next('.accordeon__info').slideDown(300)
 			$(this).parent('.accordeon__item').toggleClass('accordeon__item_active');
-			$(this).next('.accordeon__info').show(300);
+			;
 		}
 	});
 
@@ -75,19 +81,7 @@ $(document).ready(function() {
 		$(this).toggleClass('calc-open_active');
 		$('.calc').toggleClass('calc_visible-mobile');
 	});
-
 	
-
-
-
-	var rooms = $('.rooms'),
-		bath = $('.bathroom'),
-		roomsPlus = $('.rooms-plus'),
-		roomsMinus = $('.rooms-minus'),
-		bathPlus = $('.bathroom-plus'),
-		bathMinus = $('.bathroom-minus'),
-		roomsVal = rooms.val(),
-		bathVal = bath.val();
 
 	$('.header-categories').waypoint(function() {
 		$('.calc').toggleClass('calc_visible');
@@ -106,7 +100,82 @@ $(document).ready(function() {
 	$(".phone-num-input").inputmask("+7 (999) 999 99 99");
 
 		
+	var rooms = $('#rooms-num');
+	var bath = $('#bath-num');
+
+	$('.rooms-minus').on('click', function(e) {
+		e.preventDefault();
+		if (rooms.val() > 1) {
+			rooms.val(Number(rooms.val()) - 1);
+			$('.rooms').val(rooms.val()  + '-комнатная');
+		} 
 				
+	});
+
+	$('.rooms-plus').on('click', function(e) {
+		e.preventDefault();
+		if (rooms.val() < 5) {
+			rooms.val(Number(rooms.val()) + 1);
+			$('.rooms').val(rooms.val()  + '-комнатная');
+		}				
+	});
+
+	$('.bathroom-minus').on('click', function(e) {
+		e.preventDefault();
+		if (bath.val() > 1) {
+			bath.val(Number(bath.val()) - 1);
+			if (bath.val() == 1) {
+				$('.bathroom').val(bath.val()  + ' санузел');
+			} else {
+				$('.bathroom').val(bath.val()  + ' санузла');
+			}
+			
+		} 
+				
+	});
+
+	$('.bathroom-plus').on('click', function(e) {
+		e.preventDefault();
+		if (bath.val() < 3) {
+			bath.val(Number(bath.val()) + 1);
+			if (bath.val() == 1) {
+				$('.bathroom').val(bath.val()  + ' санузел');
+			} else {
+				$('.bathroom').val(bath.val()  + ' санузла');
+			}
+		}				
+	});
+
+	//********************* New **************************/
+
+	
+	$('.page-banner__slider').slick({
+		slidesToShow: 1,
+		autoplay: true
+	});
+	
+
+	$('.cleaner-team__more').on('click', function(e) {
+		e.preventDefault();
+		$('body').toggleClass('no-scroll');
+		$('.include-modal').fadeIn(300);
+	});
+
+	$('.include-modal__close').on('click', function(e) {
+		e.preventDefault();
+		$('.include-modal').fadeOut(300);
+		$('body').removeClass('no-scroll');
+	});
+
+	$(document).mouseup(function (e) {
+	    var container = $(".include-modal");
+	    if (container.has(e.target).length === 0){
+	        container.fadeOut(300);
+	    }
+	});
+		
+	
+	
 		
 
 });
